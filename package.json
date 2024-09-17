@@ -1,34 +1,31 @@
 {
-  "name": "profileconnector",
+  "name": "charles-motors",
   "version": "1.0.0",
-  "description": "Social network app",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node server",
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CharlesBZ/profile-connector.git"
-  },
-  "author": "Charles A. Best-Zambrana",
+  "author": "Charles A. Best Zambrana",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/CharlesBZ/profile-connector/issues"
-  },
-  "homepage": "https://github.com/CharlesBZ/profile-connector#readme",
+  "description": "Motorcycle Rental App",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "config": "^3.3.11",
+    "config": "^3.3.12",
+    "cors": "^2.8.5",
     "express": "^4.19.2",
-    "express-validator": "^7.0.1",
+    "express-validator": "^7.2.0",
     "gravatar": "^1.8.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.3.0",
+    "mongoose": "^8.5.4",
     "request": "^2.88.2"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
-    "nodemon": "^3.1.0"
+    "eslint-config-prettier": "^9.1.0",
+    "nodemon": "^3.1.4",
+    "prettier": "3.3.3"
   }
 }
